@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(212, 211, 211);
+  }
+
+.grid {
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    gap: 0;
+  }
+
+.grid div {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.snake {
+    background-color: black;
+}
+
+.apple {
+    background: red;
+    border-radius: 20px;
+}
+
+.popup {
+    background: rgb(32, 31, 31);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.state {
+    background-color: red;
+    width: 100px;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 20;
+    margin: 20px;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    display: none;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    font-weight: 800;
+}
+
+h1 {
+    text-align: center;
+}
